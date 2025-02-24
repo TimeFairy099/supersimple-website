@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+     <html lang="en">
+     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>transform</title>
+        <style>
+            /* used to apply 2d and 3d transformations to an element */
+            div{
+                background-color: rgb(6, 39, 28);
+                height: 100px;
+                
+                width: 100px;
+                position: absolute;
+                top: 100px;
+                left: 100px;
+                
+                /* transform:rotate(30deg); */
+                /*1. ye property us div k andar wale text pr bhi lagegi (rotate,scale,skew,translate)
+                     isko transition ki trh hover ki need nahi hoti h(jb hover wale fn k andar dalege tb jarurat hogi)
+                2. is property ko ham kisi perticular axis k about bhi laga sakte h
+                      eg--rotate: z 90deg;   */
+                    /* transform: scale(1,2); */
+                
+                
+                color: white;
+                transition:all 2s ease-in 1s;
+                }
+                
+            div:hover{
+                background-color: red;
+                /* height: 50px; */
+                /* transform: translate(-200px,60px);--->move in x,y dirn */
+                /* transform:translateY(200px) ; */
+                transform: skew(30deg);
+
+            }
+          
+        </style>
+     </head>
+     <body>
+        <div>jeeva</div>
+     </body>
+     </html>

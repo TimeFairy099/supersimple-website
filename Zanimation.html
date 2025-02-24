@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+     <html lang="en">
+     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>animations</title>
+        <style>
+           /* ye transform ka better tarika h, isme hm keyframe us karte h ,like template use karte h  */
+            div{
+                background-color: rgb(6, 39, 28);
+                height: 100px;
+                
+                width: 100px;
+                position: absolute;
+                top: 100px;
+                left: 100px;
+                color: white;
+                animation-name:riya;
+                animation-duration:0.5s;
+                animation-timing-function: ease-in;
+                animation-delay: 1s;
+                animation-iteration-count:infinite;
+                animation-direction: alternate;
+                /* shorthand
+                animation:name  duration timing-fn delay it-count dirn */
+                }
+                /* % in animation-->
+                jab animation x% complete ho chuka h */
+
+             @keyframes riya{
+                0%{
+                    left: 0px;
+                    background-color: aqua;}
+                50%{
+                    background-color: yellow;
+                }
+                100%{
+                    left: 400px;
+                    background-color: blueviolet;
+                    }
+             }   
+                
+            div:hover{
+                background-color: red;
+            }
+          
+        </style>
+     </head>
+     <body>
+        <div>jeeva</div>
+     </body>
+     </html>
